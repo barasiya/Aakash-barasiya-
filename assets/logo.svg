@@ -1,0 +1,41 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f18"/>
+      <stop offset="100%" stop-color="#131a2b"/>
+    </linearGradient>
+    <linearGradient id="hexStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="55%" stop-color="#39ff88"/>
+      <stop offset="100%" stop-color="#c026ff"/>
+    </linearGradient>
+    <linearGradient id="letterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#39ff88"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- background hexagon -->
+  <polygon points="256,20 452,138 452,374 256,492 60,374 60,138"
+           fill="url(#bgGrad)" stroke="url(#hexStroke)" stroke-width="10" filter="url(#glow)"/>
+
+  <!-- inner circuit accents -->
+  <g stroke="url(#hexStroke)" stroke-width="4" fill="none" opacity="0.55">
+    <path d="M256 20 L256 70"/>
+    <path d="M256 492 L256 442"/>
+    <circle cx="256" cy="70" r="6" fill="#00e5ff"/>
+    <circle cx="256" cy="442" r="6" fill="#c026ff"/>
+  </g>
+
+  <!-- AB monogram -->
+  <text x="50%" y="58%" text-anchor="middle" font-family="'Space Grotesk','Segoe UI',sans-serif"
+        font-weight="700" font-size="220" fill="url(#letterGrad)" filter="url(#glow)"
+        letter-spacing="-6">AB</text>
+</svg>

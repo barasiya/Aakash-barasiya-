@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aakash Barasiya | Software Developer | MERN Stack Developer</title>
+<meta name="description" content="Aakash Barasiya is a Software Developer and Computer Science Engineering student skilled in MERN Stack, Django, REST APIs and Software Testing.">
+<meta name="keywords" content="Aakash Barasiya, Software Developer, MERN Stack Developer, Django Developer, Frontend Developer, Software Testing, Full Stack Developer, Bhopal">
+<meta name="author" content="Aakash Barasiya">
+<meta name="theme-color" content="#07090e">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Aakash Barasiya | Software Developer">
+<meta property="og:description" content="Building scalable, responsive and reliable web applications with modern development and testing practices.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aakash-barasiya-vlf5.vercel.app/">
+<meta property="og:image" content="https://aakash-barasiya-vlf5.vercel.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aakash Barasiya | Software Developer">
+<meta name="twitter:description" content="Building scalable, responsive and reliable web applications with modern development and testing practices.">
+<meta name="twitter:image" content="https://aakash-barasiya-vlf5.vercel.app/assets/og-image.png">
+
+<!-- Structured Data (Person schema) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aakash Barasiya",
+  "jobTitle": "Software Developer",
+  "url": "https://aakash-barasiya-vlf5.vercel.app/",
+  "image": "https://aakash-barasiya-vlf5.vercel.app/assets/og-image.png",
+  "email": "mailto:aakashbarasiya2001@gmail.com",
+  "telephone": "+91-95751-33239",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bhopal",
+    "addressRegion": "Madhya Pradesh",
+    "addressCountry": "IN"
+  },
+  "sameAs": [
+    "https://github.com/barasiya",
+    "https://www.linkedin.com/in/aakash-barasiya-13173b215/",
+    "https://www.salesforce.com/trailblazer/t7mpse1x1tpvquslsp"
+  ]
+}
+</script>
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+
+<!-- PWA support -->
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Aakash Barasiya">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+
+<!-- Google Analytics (optional) — uncomment and replace G-XXXXXXXXXX with
+     your own Measurement ID from analytics.google.com to enable GA tracking.
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+-->
+</head>
+<body>
+
+<!-- ================= LOADING SCREEN ================= -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-logo"><img src="assets/logo-512.png" alt="AB logo" class="loader-logo-img"><span class="loader-logo-text">AAKASH.BARASIYA</span></div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- ================= CUSTOM CURSOR ================= -->
+<!-- Custom cursor removed for a simpler, cleaner experience -->
+
+<!-- ================= NAVBAR ================= -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<header class="navbar" id="navbar">
+  <nav class="navbar-inner">
+    <a href="#home" class="nav-logo"><img src="assets/logo-512.png" alt="AB logo" class="nav-logo-img"><span class="nav-logo-full">AAKASH.BARASIYA</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+      <li><a href="#journey" class="nav-link" data-section="journey">Journey</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="assets/Aakash-Barasiya-Resume.pdf" class="btn btn-outline btn-sm" download>
+        <i class="fa-solid fa-download"></i><span>Resume</span>
+      </a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme">
+        <i class="fa-solid fa-moon" id="themeIcon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="mobile-menu-brand">
+      <img src="assets/logo-512.png" alt="AB logo" class="mobile-menu-logo">
+      <span>AAKASH.BARASIYA</span>
+    </div>
+    <ul class="mobile-links">
+      <li><a href="#home" class="mobile-link" data-section="home">Home</a></li>
+      <li><a href="#about" class="mobile-link" data-section="about">About</a></li>
+      <li><a href="#skills" class="mobile-link" data-section="skills">Skills</a></li>
+      <li><a href="#education" class="mobile-link" data-section="education">Education</a></li>
+      <li><a href="#projects" class="mobile-link" data-section="projects">Projects</a></li>
+      <li><a href="#certifications" class="mobile-link" data-section="certifications">Certifications</a></li>
+      <li><a href="#journey" class="mobile-link" data-section="journey">Journey</a></li>
+      <li><a href="#contact" class="mobile-link" data-section="contact">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-socials">
+      <a href="https://github.com/barasiya" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/aakash-barasiya-13173b215/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/akash_12sia" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="mailto:aakashbarasiya2001@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <a href="assets/Aakash-Barasiya-Resume.pdf" class="btn btn-primary btn-sm" download>
+      <i class="fa-solid fa-download"></i> Download Resume
+    </a>
+  </div>
+</header>
+
+<main id="mainContent">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-glow hero-glow-3"></div>
+    <canvas class="hero-particles" id="particlesCanvas" aria-hidden="true"></canvas>
+  </div>
+
+  <div class="hero-inner container">
+    <div class="hero-left reveal-up">
+      <span class="badge">
+        <span class="badge-dot"></span> AVAILABLE FOR OPPORTUNITIES
+      </span>
+
+      <h1 class="hero-title">
+        Hi, I'm<br>
+        <span class="gradient-text">Aakash Barasiya</span>
+      </h1>
+
+      <div class="hero-typing">
+        <span id="typingText"></span><span class="typing-cursor">|</span>
+      </div>
+
+      <p class="hero-desc">
+        Entry-level Software Developer skilled in MERN Stack, Python/Django and Software Testing, with hands-on experience building full-stack web applications, REST APIs, authentication systems, real-time applications and reliable user experiences.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">VIEW MY WORK</a>
+        <a href="assets/Aakash-Barasiya-Resume.pdf" class="btn btn-outline" download>DOWNLOAD RESUME</a>
+      </div>
+
+      <a href="#contact" class="hero-connect">Let's Connect <i class="fa-solid fa-arrow-right"></i></a>
+
+      <div class="hero-socials">
+        <a href="https://github.com/barasiya" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/aakash-barasiya-13173b215/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/akash_12sia" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:aakashbarasiya2001@gmail.com" aria-label="Send Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.salesforce.com/trailblazer/t7mpse1x1tpvquslsp" target="_blank" rel="noopener noreferrer" aria-label="Salesforce Trailhead Profile"><i class="fa-solid fa-cloud"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-right reveal-up" style="--delay:0.15s">
+      <div class="terminal-card" id="terminalCard">
+        <div class="terminal-header">
+          <div class="terminal-dots"><span></span><span></span><span></span></div>
+        </div>
+        <div class="terminal-body">
+          <pre><code><span class="tk-key">const</span> <span class="tk-var">developer</span> = {
+  <span class="tk-prop">name</span>: <span class="tk-str">"Aakash"</span>,
+  <span class="tk-prop">role</span>: <span class="tk-str">"Software Developer"</span>,
+  <span class="tk-prop">stack</span>: <span class="tk-str">"MERN"</span>,
+  <span class="tk-prop">backend</span>: <span class="tk-str">"Django"</span>,
+  <span class="tk-prop">testing</span>: <span class="tk-bool">true</span>,
+  <span class="tk-prop">status</span>: <span class="tk-str">"open_to_work"</span>
+};</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+    <span></span>
+  </a>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">Get To Know Me</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-photo reveal-up">
+        <div class="about-photo-frame">
+          <img src="assets/profile.jpg" alt="Aakash Barasiya" loading="lazy" width="480" height="600">
+        </div>
+      </div>
+      <div class="about-text reveal-up" style="--delay:0.1s">
+        <p>I am an entry-level Software Developer with a strong foundation in MERN Stack development, Python/Django and Software Testing. I enjoy building full-stack applications with RESTful APIs, authentication, CRUD operations and real-time functionality while focusing on clean, reliable and user-friendly solutions.</p>
+        <p>My development journey combines software engineering with testing practices such as manual testing, API testing, test case design, bug reporting, regression testing and debugging.</p>
+
+        <div class="about-do">
+          <h3>What I Do</h3>
+          <div class="do-list">
+            <div class="do-item"><span class="do-icon"><i class="fa-solid fa-layer-group"></i></span><span>Full Stack Development</span></div>
+            <div class="do-item"><span class="do-icon"><i class="fa-solid fa-plug"></i></span><span>REST API Development</span></div>
+            <div class="do-item"><span class="do-icon"><i class="fa-solid fa-display"></i></span><span>Frontend Development</span></div>
+            <div class="do-item"><span class="do-icon"><i class="fa-solid fa-server"></i></span><span>Backend Development</span></div>
+            <div class="do-item"><span class="do-icon"><i class="fa-solid fa-vial"></i></span><span>Software Testing</span></div>
+            <div class="do-item"><span class="do-icon"><i class="fa-solid fa-code-compare"></i></span><span>API Testing</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-cards reveal-up" style="--delay:0.1s">
+        <div class="info-card"><span class="info-icon">🎓</span><p>B.Tech Computer Science</p></div>
+        <div class="info-card"><span class="info-icon">💻</span><p>Full Stack Developer</p></div>
+        <div class="info-card"><span class="info-icon">🧪</span><p>Software Testing</p></div>
+        <div class="info-card"><span class="info-icon">🚀</span><p>Project Builder</p></div>
+      </div>
+    </div>
+
+    <!-- Professional Summary -->
+    <div class="summary-card reveal-up">
+      <h3>Professional Profile</h3>
+      <p>Entry-level Full Stack Developer skilled in the MERN stack (React.js, Node.js, Express.js, MongoDB) and Python/Django, with a strong foundation in Software Testing — manual testing, API testing with Postman, writing test cases, bug reporting, debugging, functional testing and regression testing.</p>
+      <div class="keyword-list">
+        <span class="keyword">MERN</span>
+        <span class="keyword">Django</span>
+        <span class="keyword">REST APIs</span>
+        <span class="keyword">JWT</span>
+        <span class="keyword">MongoDB</span>
+        <span class="keyword">Postman</span>
+        <span class="keyword">Testing</span>
+        <span class="keyword">Git</span>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-grid reveal-up">
+      <div class="stat-item">
+        <span class="stat-number" data-target="2" data-suffix="+">0</span>
+        <span class="stat-label">Full Stack Projects</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="15" data-suffix="+">0</span>
+        <span class="stat-label">Technologies</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="10" data-suffix="+">0</span>
+        <span class="stat-label">Certifications / Credentials</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="1" data-suffix="">0</span>
+        <span class="stat-label">Hackathon Achievement</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section section-alt" id="skills">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">What I Know</span>
+      <h2 class="section-title">Technical Skills</h2>
+    </div>
+
+    <div class="skills-grid" id="skillsGrid"></div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section class="section" id="education">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">Academic Background</span>
+      <h2 class="section-title">Education</h2>
+    </div>
+
+    <div class="timeline" id="educationTimeline"></div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section section-alt" id="projects">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">Featured Work</span>
+      <h2 class="section-title">Projects</h2>
+    </div>
+
+    <div class="filter-bar reveal-up" id="filterBar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="full-stack">Full Stack</button>
+      <button class="filter-btn" data-filter="mern">MERN</button>
+      <button class="filter-btn" data-filter="javascript">JavaScript</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+</section>
+
+<!-- ================= SOFTWARE TESTING ================= -->
+<section class="section" id="testing">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">Quality First</span>
+      <h2 class="section-title">Software Testing</h2>
+    </div>
+
+    <div class="testing-grid reveal-up" id="testingGrid"></div>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+<section class="section section-alt" id="certifications">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">Credentials</span>
+      <h2 class="section-title">Certifications</h2>
+    </div>
+
+    <div class="cert-grid" id="certGrid"></div>
+  </div>
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+<section class="section" id="achievements">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">Milestones</span>
+      <h2 class="section-title">Achievements</h2>
+    </div>
+
+    <div class="achievements-grid reveal-up">
+      <div class="achievement-card">
+        <span class="achievement-icon">🥇</span>
+        <h3>1st Rank</h3>
+        <span class="achievement-sub">SISTec Innovation Hackathon 2025</span>
+        <p>Secured 1st Rank at SISTec Innovation Hackathon 2025.</p>
+      </div>
+      <div class="achievement-card">
+        <span class="achievement-icon">🚀</span>
+        <h3>Full-Stack Projects</h3>
+        <span class="achievement-sub">2 MERN Projects Delivered</span>
+        <p>Completed 2 full-stack MERN projects covering API design, authentication, real-time communication and end-to-end testing.</p>
+      </div>
+      <div class="achievement-card">
+        <span class="achievement-icon">☁️</span>
+        <h3>Salesforce Agentblazer Champion</h3>
+        <span class="achievement-sub">Salesforce Trailhead</span>
+        <p>Achieved Salesforce Agentblazer Champion status through Salesforce Trailhead.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= JOURNEY ================= -->
+<section class="section section-alt" id="journey">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">The Path So Far</span>
+      <h2 class="section-title">My Journey</h2>
+    </div>
+
+    <div class="journey-timeline" id="journeyTimeline"></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">Get In Touch</span>
+      <h2 class="section-title">Let's Build Something Together</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal-up">
+        <p class="contact-lead">Have an opportunity, project or collaboration in mind? Let's connect.</p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+            <div><span class="contact-label">Phone</span><a href="tel:+919575133239">+91 95751 33239</a></div>
+          </li>
+          <li>
+            <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+            <div><span class="contact-label">Email</span><a href="mailto:aakashbarasiya2001@gmail.com">aakashbarasiya2001@gmail.com</a></div>
+          </li>
+          <li>
+            <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <div><span class="contact-label">Location</span><span>Bhopal, Madhya Pradesh, India</span></div>
+          </li>
+          <li>
+            <span class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+            <div><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/aakash-barasiya-13173b215/" target="_blank" rel="noopener noreferrer">aakash-barasiya</a></div>
+          </li>
+          <li>
+            <span class="contact-icon"><i class="fa-brands fa-github"></i></span>
+            <div><span class="contact-label">GitHub</span><a href="https://github.com/barasiya" target="_blank" rel="noopener noreferrer">github.com/barasiya</a></div>
+          </li>
+          <li>
+            <span class="contact-icon"><i class="fa-brands fa-instagram"></i></span>
+            <div><span class="contact-label">Instagram</span><a href="https://www.instagram.com/akash_12sia" target="_blank" rel="noopener noreferrer">@akash_12sia</a></div>
+          </li>
+        </ul>
+
+        <a href="assets/Aakash-Barasiya.vcf" class="btn btn-outline btn-sm" download style="margin-top:26px;">
+          <i class="fa-solid fa-address-card"></i><span>Save Contact</span>
+        </a>
+      </div>
+
+      <form class="contact-form reveal-up" id="contactForm" action="https://formsubmit.co/aakashbarasiya2001@gmail.com" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="name" placeholder="Your name" required>
+          <span class="form-error" id="err-fullName"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <span class="form-error" id="err-email"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+          <span class="form-error" id="err-subject"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about the opportunity or project..." required></textarea>
+          <span class="form-error" id="err-message"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+          <span class="btn-text">Send Message</span>
+          <span class="btn-loader" aria-hidden="true"></span>
+        </button>
+
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <a href="#home" class="nav-logo"><img src="assets/logo-512.png" alt="AB logo" class="nav-logo-img"><span class="nav-logo-full">AAKASH.BARASIYA</span></a>
+    <p class="footer-text">Designed &amp; Developed by Aakash Barasiya</p>
+
+    <ul class="footer-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="footer-socials">
+      <a href="https://github.com/barasiya" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/aakash-barasiya-13173b215/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/akash_12sia" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.salesforce.com/trailblazer/t7mpse1x1tpvquslsp" target="_blank" rel="noopener noreferrer" aria-label="Salesforce Trailhead"><i class="fa-solid fa-cloud"></i></a>
+    </div>
+
+    <p class="footer-copyright">© 2026 Aakash Barasiya. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- ================= INSTALL APP BANNER ================= -->
+<div class="install-banner" id="installBanner" role="dialog" aria-label="Install app">
+  <div class="install-banner-icon">
+    <img src="assets/icon-192.png" alt="" width="40" height="40">
+  </div>
+  <div class="install-banner-text">
+    <strong>Install this portfolio</strong>
+    <span id="installBannerSubtext">Add to your home screen for quick access, app-style.</span>
+  </div>
+  <div class="install-banner-actions">
+    <button class="btn btn-primary btn-sm" id="installBannerBtn">Install</button>
+    <button class="install-banner-close" id="installBannerClose" aria-label="Dismiss">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+</div>
+
+<!-- ================= BACK TO TOP ================= -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- ================= PROJECT MODAL ================= -->
+<div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose" aria-label="Close project details"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+</div>
+
+<!-- ================= CERTIFICATE MODAL ================= -->
+<div class="modal-overlay" id="certModal" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+  <div class="modal-box modal-box-sm">
+    <button class="modal-close" id="certModalClose" aria-label="Close certificate view"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-content" id="certModalContent"></div>
+  </div>
+</div>
+
+<script src="js/projects.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Vercel Web Analytics — works automatically once "Analytics" is enabled
+     in your Vercel project dashboard (Project → Analytics tab). No ID needed. -->
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

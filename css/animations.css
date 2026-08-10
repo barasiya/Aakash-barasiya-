@@ -1,0 +1,44 @@
+/* ==========================================================================
+   Aakash Barasiya — Portfolio
+   animations.css — keyframes & scroll/interaction animation helpers
+   ========================================================================== */
+
+/* Staggered reveal helper classes assigned via JS (nth-child delay) */
+.stagger-1{ --delay:0.05s; }
+.stagger-2{ --delay:0.1s; }
+.stagger-3{ --delay:0.15s; }
+.stagger-4{ --delay:0.2s; }
+.stagger-5{ --delay:0.25s; }
+.stagger-6{ --delay:0.3s; }
+
+/* Project card tilt (JS sets custom props --rx/--ry) */
+.project-card{
+  transform: perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(0);
+}
+.project-card:hover{
+  transform: perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(-8px);
+}
+
+/* Fade-in utility */
+.fade-in{ animation:fadeIn .8s var(--ease) forwards; }
+@keyframes fadeIn{ from{ opacity:0; } to{ opacity:1; } }
+
+/* Skill tag pop-in stagger (applied via JS when in view) */
+.skill-tag{ opacity:0; transform:translateY(8px); }
+.skill-tag.pop{ opacity:1; transform:translateY(0); transition:opacity .5s var(--ease), transform .5s var(--ease); }
+
+/* Journey line draw */
+.journey-item::before{ transform-origin:top; }
+
+/* Modal micro entrance for content */
+.modal-content{ animation:modalContentIn .4s var(--ease) both; }
+@keyframes modalContentIn{ from{ opacity:0; transform:translateY(10px);} to{ opacity:1; transform:translateY(0);} }
+
+/* Achievement icon subtle float */
+.achievement-icon{ display:inline-block; animation:iconFloat 3.5s ease-in-out infinite; }
+@keyframes iconFloat{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-6px);} }
+
+/* Respect reduced motion globally (redundant safeguard, primary rule lives in style.css) */
+@media (prefers-reduced-motion: reduce){
+  .terminal-card, .hero-grid, .achievement-icon{ animation:none !important; }
+}

@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Barasiya;Aakash;;;
+FN:Aakash Barasiya
+TITLE:Software Developer | MERN Stack Developer | Django Developer
+TEL;TYPE=CELL:+919575133239
+EMAIL;TYPE=INTERNET:aakashbarasiya2001@gmail.com
+ADR;TYPE=WORK:;;Bhopal;Madhya Pradesh;;India
+URL:https://aakash-barasiya-vlf5.vercel.app/
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/aakash-barasiya-13173b215/
+URL;TYPE=GitHub:https://github.com/barasiya
+END:VCARD
