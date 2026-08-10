@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aakash-barasiya.vercel.app/sitemap.xml
+Sitemap: https://aakashbarasiya.vercel.app/sitemap.xml
